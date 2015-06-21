@@ -1,8 +1,5 @@
-Getting and Cleaning Data - getdata-015
+Getting and Cleaning Data - getdata-015 (coursera course)
 ==========================================
-Source data: [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-[Download the data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-
 ## Requirements
 - all source data needs to be unzipped in the same folder as the script get launched (i.e. the path should be valid ./UCI\ HAR\ Dataset/)
 - reshape2 package is installed (i.e. install.packages("reshape2")
@@ -16,3 +13,9 @@ The code takes for granted all the data is present in the same folder, un-compre
 ## How to run_analysis.R
 - source("./run_analysis.R")
 - then run through RStudio for example
+
+## Resources
+Source data: 
+[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+[Download the data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)

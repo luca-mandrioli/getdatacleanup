@@ -1,9 +1,6 @@
 #setwd("~/Downloads/project")
 library(reshape2)
-
 activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c('ID', 'label'))
-# part 4: renaming the subject column
-names(subject) <- "Subject"
 features <- read.table("UCI HAR Dataset/features.txt", col.names = c('ID', 'feature'))
 
 # part 1: loading x, y and subject data. Merging test with train data
@@ -22,6 +19,7 @@ names(xExtract) <- featureNames
 yExtract <- y
 names(yExtract) <- "ActivityLabel"
 yExtract$ActivityLabel <- activityLabels[y$V1, 2]
+names(subject) <- "Subject"
 # part 4 continue: merging all subject, y and x data
 dataset <- cbind(subject, yExtract, xExtract)
 write.table(dataset, "dataset_cleanead_up.txt")
