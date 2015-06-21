@@ -1,4 +1,4 @@
-setwd("~/Downloads/project")
+#setwd("~/Downloads/project")
 library(reshape2)
 
 activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c('ID', 'label'))
